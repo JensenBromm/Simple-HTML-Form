@@ -28,6 +28,8 @@
                 fwrite($file,"E-Mail: ");
                 fwrite($file,$email ."\n");
 
+                fclose($file);
+
             }
         ?>
 

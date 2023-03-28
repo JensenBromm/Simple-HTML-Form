@@ -15,109 +15,103 @@
                         <form method="post" action="saveFile.php">
                             <!--Input for First Name-->
                             <p style="color:black;">
-                                First Name: <input size="12" name="firstName" type="text" >
+                                First Name: <input size="12" name="firstName" type="text" required>
                             </p>
                             <!--Input for Last Name-->
                             <p style="color:black;">
-                                Last Name: <input size="12" name="lastName" type="text" >
+                                Last Name: <input size="12" name="lastName" type="text" required>
                             </p>
                             <!--Input for Address-->
                             <p style="color:black;">
-                                Address:     <input size="12" name="address" type="text" >
+                                Address:     <input size="12" name="address" type="text" required>
                             </p>
                             <!--Drop Down Menu for State-->
                             <p style="color:black;">
                                <label for="state-choice"> State: </label>
                                <select name="state-choice" id="state-choice">
-                                <option value="AL">AL</option>
-                                <option value="AK">AK</option>
-                                <option value="AZ">AZ</option>
-                                <option value="CA">CA</option>
-                                <option value="CO">CO</option>
-                                <option value="CT">CT</option>
-                                <option value="DE">DE</option>
-                                <option value="DC">DC</option>
-                                <option value="DT">DT</option>
-                                <option value="FL">FL</option>
-                                <option value="GA">GA</option>
-                                <option value="HI">HI</option>
-                                <option value="ID">ID</option>
-                                <option value="IL">IL</option>
-                                <option value="IN">IN</option>
-                                <option value="IA">IA</option>
-                                <option value="KS">KS</option>
-                                <option value="KY">KY</option>
-                                <option value="LA">LA</option>
-                                <option value="ME">ME</option>
-                                <option value="MD">MD</option>
-                                <option value="MA">MA</option>
-                                <option value="MI">MI</option>
-                                <option value="MN">MN</option>
-                                <option value="MS">MS</option>
-                                <option value="MO">MO</option>
-                                <option value="MT">MT</option>
-                                <option value="NE">NE</option>
-                                <option value="NV">NV</option>
-                                <option value="NH">NH</option>
-                                <option value="NJ">NJ</option>
-                                <option value="NM">NM</option>
-                                <option value="NY">NY</option>
-                                <option value="NC">NC</option>
-                                <option value="ND">ND</option>
-                                <option value="OH">OH</option>
-                                <option value="OK">OK</option>
-                                <option value="OR">OR</option>
-                                <option value="PA">PA</option>
-                                <option value="RI">RI</option>
-                                <option value="SC">SC</option>
-                                <option value="SD">SD</option>
-                                <option value="TN">TN</option>
-                                <option value="TX">TX</option>
-                                <option value="UT">UT</option>
-                                <option value="VT">VT</option>
-                                <option value="VA">VA</option>
-                                <option value="WA">WA</option>
-                                <option value="WV">WV</option>
-                                <option value="WI">WI</option>
-                                <option value="WY">WY</option>
+                                    <option value="AL">AL</option>
+                                    <option value="AK">AK</option>
+                                    <option value="AZ">AZ</option>
+                                    <option value="CA">CA</option>
+                                    <option value="CO">CO</option>
+                                    <option value="CT">CT</option>
+                                    <option value="DE">DE</option>
+                                    <option value="DC">DC</option>
+                                    <option value="DT">DT</option>
+                                    <option value="FL">FL</option>
+                                    <option value="GA">GA</option>
+                                    <option value="HI">HI</option>
+                                    <option value="ID">ID</option>
+                                    <option value="IL">IL</option>
+                                    <option value="IN">IN</option>
+                                    <option value="IA">IA</option>
+                                    <option value="KS">KS</option>
+                                    <option value="KY">KY</option>
+                                    <option value="LA">LA</option>
+                                    <option value="ME">ME</option>
+                                    <option value="MD">MD</option>
+                                    <option value="MA">MA</option>
+                                    <option value="MI">MI</option>
+                                    <option value="MN">MN</option>
+                                    <option value="MS">MS</option>
+                                    <option value="MO">MO</option>
+                                    <option value="MT">MT</option>
+                                    <option value="NE">NE</option>
+                                    <option value="NV">NV</option>
+                                    <option value="NH">NH</option>
+                                    <option value="NJ">NJ</option>
+                                    <option value="NM">NM</option>
+                                    <option value="NY">NY</option>
+                                    <option value="NC">NC</option>
+                                    <option value="ND">ND</option>
+                                    <option value="OH">OH</option>
+                                    <option value="OK">OK</option>
+                                    <option value="OR">OR</option>
+                                    <option value="PA">PA</option>
+                                    <option value="RI">RI</option>
+                                    <option value="SC">SC</option>
+                                    <option value="SD">SD</option>
+                                    <option value="TN">TN</option>
+                                    <option value="TX">TX</option>
+                                    <option value="UT">UT</option>
+                                    <option value="VT">VT</option>
+                                    <option value="VA">VA</option>
+                                    <option value="WA">WA</option>
+                                    <option value="WV">WV</option>
+                                    <option value="WI">WI</option>
+                                    <option value="WY">WY</option>
                                </select>
                             </p>
                             <!--Input for Zipcode-->
                             <p style="color:black;">
-                                Zip Code: <input size="12" name="zip" type="text" maxlength="5" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+                                Zip Code: <input size="12" name="zip" type="text" maxlength="5" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" required>
                                 <!--Restrict the user to only number input-->
                             </p>
                             <!--Input for Phone Number-->
                             <p style="color:black;">
-                                Phone Number: <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12">
+                                Phone Number: <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" required>
                                 <!--User must match pattern of xxx-xxx-xxxx -->
                             </p>
 
                             <!--Input for Email-->
                             <p style="color:black;">
-                                Email: <input type="email" name="email">
+                                Email: <input type="email" name="email" required>
                                 <!--type email requires an @ in users input-->
                             </p>
 
                             <!--Buttons to do certain actions-->
                             <p>
-                                <button type="reset"> <!--Type="reset" resets all fields in form-->
-                                    Reset
-                                </button>
-                                <button type="button">
-                                    Save to Database
-                                </button>
-                                <button type="submit">
-                                    Save to File
-                                </button>
+                                <input type="reset" value="Reset"> <!--Type="reset" clears the form when clicked-->
+                                <input type="submit" value="Save to Database">
+                                <input type="submit" name="Save to File" value="Save to File">
                             </p>
 
                             <br>
                             <!--Contents of database Link-->
-                            <a href="http://www.google.com">View Contacts in Database</a>
+                            <a href="submitPage.html">View Contacts in Database</a>
                             <br>
                             <!--Contents of File Link-->
-                            <a href="http://www.google.com">View Contacts in File</a>
+                            <a href="submitPage.html">View Contacts in File</a>
                         </form>
                     </td>
                 
