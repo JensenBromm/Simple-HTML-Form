@@ -4,7 +4,7 @@
         <?php
             if(isset($_POST['submit']))
             {
-                $file=fopen("savedInfo.txt","a");
+                $file=fopen("savedInfo.txt",'a') or die("ERROR: Can't Open File");
 
                 $firstName=$_POST['firstName'];
                 fwrite($file,"First Name: ");
