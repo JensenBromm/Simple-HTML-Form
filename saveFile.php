@@ -2,8 +2,7 @@
 <html>
     <body>
         <?php
-            if(isset($_POST['submit']))
-            {
+            //Open the file and write all the information to that file
                 $file=fopen("savedInfo.txt",'a') or die("ERROR: Can't Open File");
 
                 $firstName=$_POST['firstName'];
@@ -30,7 +29,48 @@
 
                 fclose($file);
 
-            }
+
+            //Create the page that shows the contact information for the submission
+            //Use echo command for html code
+            echo "<table align=\"center\" bgcolor=\"lightgrey\" border=\"3\">";
+                echo "<tr>
+                            <th> Your information:</th>
+                      </tr>";
+                echo "<tr>
+                            <td>
+                                <p>
+                                    First Name: ".$firstName."
+                                </p>
+                                <p>
+                                    Last Name: ".$lastName."
+                                </p>
+                                <p>
+                                    Address: ".$address."
+                                </p>
+                                <p>
+                                    State: ".$state."
+                                </p>
+                                <p>
+                                    Zip Code: ".$zip."
+                                </p>
+                                <p>
+                                    Phone Number: ".$phone."
+                                </p>
+                                <p>
+                                    Email: ".$email."
+                                </p>
+                            </td>
+                      </tr>";
+
+                //Create a go back link
+                echo "<tr>
+                            <td align=\"center\">
+                                <a href=\"https://web-students-viewer.georgiasouthern.edu/~jb54322@ad.georgiasouthern.edu/\">
+                                    Return to the Main Page
+                                </a>
+                            </td>
+                      </tr>";
+            echo "</table>";
         ?>
 
     </body>

@@ -13,11 +13,11 @@
                         <form method="post" action="saveFile.php">
                             <!--Input for First Name-->
                             <p style="color:black;">
-                                First Name: <input size="12" name="firstName" type="text" required>
+                                First Name: <input size="12" name="firstName" type="text" required  pattern="[A-Za-z]+">
                             </p>
                             <!--Input for Last Name-->
                             <p style="color:black;">
-                                Last Name: <input size="12" name="lastName" type="text" required>
+                                Last Name: <input size="12" name="lastName" type="text" required pattern="[A-Za-z]+">
                             </p>
                             <!--Input for Address-->
                             <p style="color:black;">
@@ -29,6 +29,7 @@
                                <select name="state-choice" id="state-choice">
                                     <option value="AL">AL</option>
                                     <option value="AK">AK</option>
+                                    <option value="AR">AR</option>
                                     <option value="AZ">AZ</option>
                                     <option value="CA">CA</option>
                                     <option value="CO">CO</option>
@@ -87,7 +88,7 @@
                             </p>
                             <!--Input for Phone Number-->
                             <p style="color:black;">
-                                Phone Number: <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" required>
+                                Phone Number: <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" required placeholder="123-123-1234">
                                 <!--User must match pattern of xxx-xxx-xxxx -->
                             </p>
 
@@ -106,10 +107,10 @@
 
                             <br>
                             <!--Contents of database Link-->
-                            <a href="submitPage.html">View Contacts in Database</a>
+                            <a href="viewFile.php">View Contacts in Database</a>
                             <br>
                             <!--Contents of File Link-->
-                            <a href="submitPage.html">View Contacts in File</a>
+                            <a href="viewFile.php">View Contacts in File</a>
                         </form>
                     </td>
                 </tr>
